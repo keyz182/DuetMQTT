@@ -2,6 +2,15 @@
 
 Sends the Duet object model to MQTT.
 
+Extract the release (or copy build artifacts) to `/opt/DuetMQTT`.
+Copy `duetmqtt.service` to `/etc/systemd/service/`. 
+Run:
+```
+sudo systemctl daemon-reload
+sudo systemctl enable duetmqtt
+sudo systemctl start duetmqtt
+```
+
 ```
 ./DuetMQTT --help
 DuetMQTT 1.0.0

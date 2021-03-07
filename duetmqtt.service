@@ -1,0 +1,12 @@
+[Unit]
+Description=Duet API MQTT Publisher
+After=duetcontrolserver.service
+Requires=duetcontrolserver.service
+
+[Service]
+ExecStart=/opt/DuetMQTT/DuetMQTT
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
