@@ -101,7 +101,7 @@ namespace DuetMQTT
 
                             if(!o.Quiet) Console.WriteLine("Updating Model");
                             var json = await connection.GetObjectModelPatch(CancellationToken.None);
-                            model.UpdateFromJson(json.RootElement);
+                            model.UpdateFromJson(json.RootElement, true);
                         }while(true);
 
 
