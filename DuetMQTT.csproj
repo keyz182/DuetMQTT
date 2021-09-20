@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <VersionPrefix>3.4.0-b2</VersionPrefix>
+    <VersionPrefix>3.4.0-b3</VersionPrefix>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <RuntimeIdentifier>linux-arm</RuntimeIdentifier>
@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="CommandLineParser" Version="2.9.0-preview1" />
-    <PackageReference Include="DuetAPIClient" Version="3.4.0-b2" />
+    <PackageReference Include="DuetAPIClient" Version="3.4.0-b3" />
     <PackageReference Include="MQTTnet" Version="3.0.16" />
   </ItemGroup>
 
