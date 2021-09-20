@@ -6,6 +6,7 @@ Extract the release (or copy build artifacts) to `/opt/DuetMQTT`.
 Copy `duetmqtt.service` to `/etc/systemd/service/`. 
 Run:
 ```
+sudo chmod +x /opt/DuetMQTT/DuetMQTT
 sudo systemctl daemon-reload
 sudo systemctl enable duetmqtt
 sudo systemctl start duetmqtt
