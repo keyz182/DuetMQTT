@@ -3,7 +3,7 @@ name: build test and release
 on:
   push:
     tags:
-      - 'V*'
+      - '*'
 
 jobs:
   build:
@@ -31,11 +31,6 @@ jobs:
         run: dotnet test --no-restore --verbosity normal
       - name: Publish
         run: dotnet publish
-      - name: Upload WebApp1 Build Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: DuetMQTT
-          path: bin/Debug/net6.0/linux-arm/publish/
       - uses: montudor/action-zip@v1
         with:
           args: zip -qq -r release.zip bin/Debug/net6.0/linux-arm/publish/
